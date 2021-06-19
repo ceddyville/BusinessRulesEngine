@@ -11,7 +11,7 @@ public class Membership {
     }
 
     //Activate a membership is not active
-    public void setActive(boolean active) {
-        this.active = active;
+    public void setActive() {
+        active = active;
     }
 }
