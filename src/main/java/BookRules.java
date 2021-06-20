@@ -11,7 +11,7 @@ public class BookRules implements IRule<Order, Order>{
     /**/
     @Override
     public boolean matches(Order order) {
-        return order.getProduct().getType().equals(ProductType.TypeName.PHYSICAL.toString())
+        return order.getProduct().getType().getTypeName().equals(ProductType.TypeName.PHYSICAL.toString())
                 && order.getProduct().getCategory().getProductCategory().equals(ProductCategory.ProductCategoryName.BOOK.toString());
     }
 
